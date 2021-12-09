@@ -10,6 +10,8 @@ import (
 	"github.com/matthewnolf/demo-app/worker"
 )
 
+var gitRevision = "dev"
+
 func main() {
 	for {
 		l := logger.Logger("github.com/matthewnolf/demo-app", "main")
@@ -19,6 +21,6 @@ func main() {
 
 		go worker.DoWork(l)
 		go worker.ConvertToInteger(l)
-		go service.DoService()
+		go service.DoService(gitRevision)
 	}
 }
