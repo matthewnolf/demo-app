@@ -10,7 +10,7 @@ import (
 func DoService(gitRevision string) {
 	for {
 		l := logger.Logger("github.com/matthewnolf/demo-app", gitRevision)
-		level.Info(l).Log("this", "is", "a", "different", "branch")
+		level.Info(l).Log("log", "target a specific revision")
 
 		time.Sleep(5 * time.Second)
 	}
