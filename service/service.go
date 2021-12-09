@@ -7,10 +7,10 @@ import (
 	"github.com/matthewnolf/demo-app/logger"
 )
 
-func DoService() {
+func DoService(gitRevision string) {
 	for {
-		l := logger.Logger("github.com/matthewnolf/demo-app", "8f348bb348e35b670169b7fe1a26ac9ff97cb7ba")
-		level.Info(l).Log("different", "branch")
+		l := logger.Logger("github.com/matthewnolf/demo-app", gitRevision)
+		level.Info(l).Log("this", "is", "a", "different", "branch")
 
 		time.Sleep(5 * time.Second)
 	}
