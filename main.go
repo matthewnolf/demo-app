@@ -18,6 +18,7 @@ func main() {
 		time.Sleep(2 * time.Second)
 
 		go worker.DoWork(l)
+		go worker.ConvertToInteger(l)
 		go service.DoService()
 	}
 }
