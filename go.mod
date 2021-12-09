@@ -1,4 +1,4 @@
-module github.com/grafana/hackathon-2021-12-showusthecode
+module github.com/matthewnolf/demo-app
 
 go 1.17
 

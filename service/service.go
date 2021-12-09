@@ -1,14 +1,15 @@
 package service
 
 import (
-	"github.com/go-kit/log/level"
-	"github.com/grafana/hackathon-2021-12-showusthecode/logger"
 	"time"
+
+	"github.com/go-kit/log/level"
+	"github.com/matthewnolf/demo-app/logger"
 )
 
 func DoService() {
 	for {
-		l := logger.Logger("github.com/grafana/hackathon-2021-12-showusthecode", "348c6fe5220de25fc19157cd07a2c02efcfc5e19")
+		l := logger.Logger("github.com/matthewnolf/demo-app", "b07bc36553512dc443072d805536a119b64dca72")
 		level.Info(l).Log("different", "branch")
 
 		time.Sleep(5 * time.Second)

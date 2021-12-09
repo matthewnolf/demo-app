@@ -4,10 +4,10 @@ import (
 	"time"
 
 	"github.com/go-kit/log/level"
-	"github.com/grafana/hackathon-2021-12-showusthecode/service"
-	"github.com/grafana/hackathon-2021-12-showusthecode/worker"
 
-	"github.com/grafana/hackathon-2021-12-showusthecode/logger"
+	"github.com/matthewnolf/demo-app/logger"
+	"github.com/matthewnolf/demo-app/service"
+	"github.com/matthewnolf/demo-app/worker"
 )
 
 func main() {
